@@ -18,14 +18,14 @@ const App = () => {
 
   const SubmitLocation = () => {
     
-    axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${api_key}`)
+    axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${api_key}`)
       .then(res => setCoord(res.data))
       .catch(err => console.log(err));
   }
   
   useEffect(() => {
     if (location) {
-      axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${api_key}`)
+      axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${api_key}`)
         .then(res => setCoord(res.data))
         .catch(err => console.log(err));
     }
