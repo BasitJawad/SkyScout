@@ -3,8 +3,8 @@ import axios from 'axios';
 import "./styles/hole.css";
 import Satellite from "./assets/Satellite.png";
 
-const api_key =  import.meta.env.VITE_WEATHER_API_KEY;
-
+// const api_key =  import.meta.env.VITE_WEATHER_API_KEY;
+const api_key="0bf011dc6b539cc636644ce99179fe94";
 const App = () => {
   const [coord, setCoord] = useState([]);
   const [weather, setWeather] = useState({});
